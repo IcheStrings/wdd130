@@ -1,83 +1,65 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-    body {
-        font-family: var(--paragraph-font);
-        max-width: 960px;
-        padding: 20px;
-        }
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
 
 :root {
-    --Primary-color:#070052;
-    --Secondary-color:#ff855c;
-    --Accent1-color: #51b9f6;
-    --Accent2-color: #b2b09b;
+    --primary-color: #070052;
+    --secondary-color: #ff855c;
+    --accent1-color: #51b9f6;
+    --accent2-color: #b2b09b;
 
-    --heading-font: '________', serif;
-    --paragraph-font: '________', serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
 
     --nav-background-color: #b2b09b;
-    --nav-link-color: #b2b09b;
+    --nav-link-color: #ffffff;
     --nav-hover-link-color: #51b9f6;
-    --nav-hover-background-color:#e4d4cc;
-
+    --nav-hover-background-color: #e4d4cc;
 }  
 
 body {
-    f______: var(--paragraph-font);
-    m______:_______;
-    p______:_______;
+    color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-font-family: var(--heading-font);
-color: var(--Primary-color);
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 header {
     padding: 20px;
-    background-color: var(--Accent1-color);
+    background-color: var(--accent1-color);
 }
 
-p{
+p {
     padding: 25px;
 }
 
 nav {
-      background-color: var(--nav-background-color);
-    
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
-    
     display: flex;
-    
-    }
-    
-    nav a {
-    
+}
+
+nav a {
     display: block;
-    
     color: var(--nav-link-color);
-    
     text-decoration: none;
-    
     padding: 1rem;
-    
-    }
-    
-    nav a:link, nav a:visited {
-    
+}
+
+nav a:link,
+nav a:visited {
     color: var(--nav-link-color);
-    
-    }
-    
-    nav a:hover {
-    
+}
+
+nav a:hover {
     color: var(--nav-hover-link-color);
-    
     background-color: var(--nav-hover-background-color);
-    
-    }
-
-
+}
