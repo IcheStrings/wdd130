@@ -1,56 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 nav {
-    background-color: steelblue;
-    padding: 10px;
+  background-color: steelblue;
+  padding: 10px;
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+  color: white;
+  display: block;
+  padding: 20px;
 }
 
 main {
-    max-width: 840px;
+  max-width: 840px;
 }
 
 h1 {
-    color: steelblue;
+  color: steelblue;
 }
 
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    box-shadow: 0 0 30px gray;
+  width: 150px;
+  height: auto;
+  border: 1px solid steelblue;
+  box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 10px;
-    margin: 0;
+  padding: 10px;
+  margin: 0;
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 main img {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Class Selectors */
+/* Adding a comment header for the "Class Selectors" section */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Apply class "box" to aside element */
+aside.box {
+  /* Remove duplicated properties from the aside rule */
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Apply class "box" to ul element list of temples */
+ul.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Float profile image to the right */
+img[src="images/profile.jpg"] {
+  float: right;
+}
+
+/* Position state/country heading element on the image within the aside element */
+aside.box {
+  position: relative;
+}
+
+aside.box h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  margin: 0;
 }
