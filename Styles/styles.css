@@ -1,8 +1,11 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }
 
 nav {
@@ -10,7 +13,7 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
-  align-items:center;
+  align-items: center;
 }
 
 nav a {
@@ -22,15 +25,19 @@ nav a {
   font-weight: 700;
 }
 
-
-
+header, footer, .grid {
+    margin: 0 auto;
+    max-width: 840px;
+}
 
 main {
-    max-width: 840px;
-  }
+  max-width: 840px;
+  margin: 1rem auto;
+}
 
 h1 {
   color: steelblue;
+  margin-top: 1rem;
 }
 
 img {
@@ -43,6 +50,7 @@ img {
 p {
   padding: 10px;
   margin: 0;
+  margin-top: 0.5rem;
 }
 
 aside {
@@ -60,19 +68,11 @@ aside img {
   height: auto;
 }
 
-main img {
-  width: 150px;
-  height: auto;
-}
-
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
 }
-
-/* Class Selectors */
-/* Adding a comment header for the "Class Selectors" section */
 
 .box {
   margin: 1rem;
@@ -82,9 +82,7 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Apply class "box" to aside element */
 aside.box {
-  /* Remove duplicated properties from the aside rule */
   margin: 1rem;
   padding: 1rem;
   background-color: #f5f5f5;
@@ -92,7 +90,6 @@ aside.box {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Apply class "box" to ul element list of temples */
 ul.box {
   margin: 2rem;
   padding: 1rem;
@@ -101,35 +98,21 @@ ul.box {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Float profile image to the right */
 img[src="images/profile.jpg"] {
   float: right;
 }
 
-.grid{
-    display: grid;
-    align-items: center;
+.grid {
+  display: grid;
+  align-items: center;
 }
 
 main {
-    grid-column: 2/3;
-    margin: 1rem;
+  grid-column: 2/3;
 }
 
 aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
-
-h1 {
-    margin-top: 1rem;
-  }
-  
-  p {
-    margin-top: 0.5rem;
-  }
-
-
-
