@@ -12,12 +12,93 @@ body {
   background-color: var(--background-color);
 }
 
-h1, h2, p {
-  color: var(--primary-color);
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  background-color: #333;
+  padding: 1rem;
+  color: #fff;
 }
 
-.Social Links a {
+/* Logo */
+header img {
+  width: 150px;
+  height: auto;
+}
+
+/* Navigation */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
   text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.history {
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+
+.history h2 {
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  text-align: center;
+}
+
+section:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+section:nth-child(2) figure {
+  margin: 0;
+}
+
+section:nth-child(2) figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section:nth-child(2) figure figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+}
+
+h1, h2, p {
+  color: var(--primary-color);
 }
 
 .hero {
@@ -52,13 +133,16 @@ h1, h2, p {
 }
 
 footer {
-    width: 100%;
-    text-align: center;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: 1rem 0;
-  }
-  
-  footer .Social Links img {
-    margin: 0 0.5rem;
-  }
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: flex-end; /* Align the social images to the right */
+  align-items: center;
+}
+
+footer .social-links img {
+  margin: 0 0.5rem;
+}
