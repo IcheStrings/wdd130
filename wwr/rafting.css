@@ -45,64 +45,9 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-nav a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
-.history {
-  padding: 2rem;
-  background-color: #f2f2f2;
-}
-
-.history h2 {
-  text-align: center;
-}
-
-section {
-  padding: 2rem;
-}
-
-section h2 {
-  text-align: center;
-}
-
-section:nth-child(2) {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
-section:nth-child(2) figure {
-  margin: 0;
-}
-
-section:nth-child(2) figure img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-section:nth-child(2) figure figcaption {
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.social-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--primary-color);
-}
-
-h1, h2, p {
-  color: var(--primary-color);
-}
-
 .hero {
   position: relative;
+  text-align: center;
 }
 
 .hero img {
@@ -118,18 +63,47 @@ h1, h2, p {
   font-size: 3rem;
 }
 
-.hero article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
+.history {
+  padding: 2rem;
+  background-color: #f2f2f2;
 }
 
-.hero article img {
-  float: right;
-  margin-left: 1rem;
+.history h2 {
+  text-align: center;
+}
+
+.adventure {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.adventure h2 {
+  text-align: center;
+}
+
+.adventure-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.adventure figure {
+  margin: 0;
+  flex: 1;
+}
+
+.adventure img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Ensures uniform height */
+  object-fit: cover; /* Ensures the images are uniformly covered */
+}
+
+.adventure figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 footer {
@@ -139,8 +113,12 @@ footer {
   color: var(--secondary-color);
   padding: 1rem 0;
   display: flex;
-  justify-content: flex-end; /* Align the social images to the right */
+  justify-content: space-between;
   align-items: center;
+}
+
+footer .social-links {
+  display: flex;
 }
 
 footer .social-links img {
