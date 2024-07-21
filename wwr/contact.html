@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Rapids Rafters for all your adventurous rafting needs.">
+    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information and style guide for the website project.">
     <meta name="author" content="Ichechuku Enwuka">
-    <title>Rapids Rafters - Contact Us</title>
-    <link rel="stylesheet" href="/wwr/styles/rafting.css">
+    <title>Review: Rapids - About Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="/wwr/images/crossedoars.jpeg" alt="Site Logo">
+        <img src="images/crossedoars.jpeg" alt="Site Logo">
         <nav>
             <a href="index.html" class="nav-link">Homepage</a>
             <a href="about.html" class="nav-link">About us</a>
@@ -21,18 +21,42 @@
     </header>
     
     <main>
-        <h1>Contact Us</h1>
+        <div class="hero">
+            <img src="images/hero%20Image.jpg" alt="Hero Image">
+            <h1>Rafting Company</h1>
+        </div>
         
-        <section class="company-info">
-            <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 Rafting Lane, River City, RC 12345</p>
-            <p><strong>Phone:</strong> (123) 456-7890</p>
-            <p><strong>Email:</strong> info@rapidsrafters.com</p>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509364!2d144.9537353153233!3d-37.816279379751984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727cd305f073d4!2s123%20Rafting%20Ln%2C%20River%20City%20RC%2012345!5e0!3m2!1sen!2sus!4v1594825405754!5m2!1sen!2sus" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <section class="history">
+            <h2>History</h2>
+            <p>Founded in 1995 by passionate outdoor enthusiasts, Adventure Rapids is a leading rafting company dedicated to providing thrilling experiences while promoting environmental conservation. Starting small, they quickly gained a reputation for their well-organized trips and expert guides. As their popularity grew, Adventure Rapids expanded their offerings to include diverse rivers and destinations. They cater to families, adventurers, and corporate groups, always prioritizing safety and a deep respect for nature. With a commitment to environmental stewardship, Adventure Rapids actively participates in river clean-ups and educates guests about conservation. They continue to innovate, ensuring unforgettable adventures for all who seek the thrill of whitewater rafting. Join Adventure Rapids and discover the true spirit of adventure!</p>
+        </section>
+        
+        <section class="adventure">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventure-images">
+                <figure>
+                    <img src="images/two%20rafts.jpg" alt="Los Dientes del Diablo">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/my%20guys.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/paddle.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/4%20rafters.jpg" alt="Full Day Excursion">
+                    <figcaption>Full Day Excursion</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/carry%20raft.jpg" alt="Weekend Getaway">
+                    <figcaption>Weekend Getaway</figcaption>
+                </figure>
             </div>
         </section>
-
+        
         <section class="contact-form">
             <h2>Contact Us</h2>
             <form>
@@ -53,6 +77,22 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="search-engine">
+                        <input type="radio" id="search-engine" name="source" value="search-engine">
+                        Search Engine
+                    </label>
+                    <label for="social-media">
+                        <input type="radio" id="social-media" name="source" value="social-media">
+                        Social Media
+                    </label>
+                    <label for="friend">
+                        <input type="radio" id="friend" name="source" value="friend">
+                        Friend
+                    </label>
+                </fieldset>
+
                 <label for="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter">
                     Subscribe to our newsletter
@@ -61,34 +101,15 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
-
-        <section class="team">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <figure>
-                    <img src="/wwr/images/emplloyee 1.JPG" alt="Employee 1">
-                    <figcaption>John Doe - Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="/wwr/images/emp 2.JPG" alt="Employee 2">
-                    <figcaption>Jane Smith - Support</figcaption>
-                </figure>
-                <figure>
-                    <img src="/wwr/images/emp 3.JPG" alt="Employee 3">
-                    <figcaption>Bob Johnson - Manager</figcaption>
-                </figure>
-            </div>
-        </section>
     </main>
 
     <footer>
         <p>©2024 | Rapid Rafting | Ichechuku Enwuka | WDD 130</p>
         <nav class="social-links">
-            <a href="https://facebook.com"><img src="/wwr/images/Colored_Facebook3_svg-64.webp" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="/wwr/images/1_Twitter3_colored_svg-64.webp" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="/wwr/images/instagram_icon-instagram_buttoninstegram-64.webp" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="images/Colored_Facebook3_svg-64.webp" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/1_Twitter3_colored_svg-64.webp" alt="twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram_icon-instagram_buttoninstegram-64.webp" alt="instagram"></a>
         </nav>
-        <a href="https://byui-cse.github.io/wdd130-ww-course/images/wwr/wwr-wireframe-aboutus-update.png">Wireframe</a>
     </footer>
 </body>
 </html>
