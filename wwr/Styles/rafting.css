@@ -10,12 +10,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--primary-color);
   background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333;
   padding: 1rem;
   color: #fff;
@@ -30,14 +32,12 @@ header img {
 /* Navigation */
 header nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  gap: 1rem;
 }
 
 header nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 1rem;
   font-weight: bold;
 }
 
@@ -45,64 +45,79 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-}
-
-.hero img {
-  width: 100%;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--secondary-color);
-  font-size: 3rem;
-}
-
-.history {
+main {
   padding: 2rem;
-  background-color: #f2f2f2;
 }
 
-.history h2 {
+h1, h2 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.adventure {
+.company-info, .contact-form, .team {
+  background-color: #fff;
   padding: 2rem;
-  background-color: #f2f2f2;
-  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-.adventure h2 {
-  text-align: center;
-}
-
-.adventure-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
+.map-container {
   margin-top: 1rem;
 }
 
-.adventure figure {
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.team-members figure {
   margin: 0;
   flex: 1;
-}
-
-.adventure img {
-  width: 100%;
-  height: auto;
-  max-height: 200px; /* Ensures uniform height */
-  object-fit: cover; /* Ensures the images are uniformly covered */
-}
-
-.adventure figcaption {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-members img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.team-members figcaption {
   margin-top: 0.5rem;
 }
 
